@@ -1,4 +1,10 @@
 #if 0
+// for test .data
+"rawaac.o",
+#endif
+
+#if 0
+//"audio_dec_aac.o"
 // fdk-aac
 "aacdecoder.o",
 "aacdecoder_lib.o",
@@ -125,7 +131,7 @@
 "audio_dec_mp3.o",
 #endif
 
-#if 1
+#if 0
 // opus
 "bands.o",
 "celt.o",
@@ -257,4 +263,49 @@
 "opus_multistream_encoder.o",
 "repacketizer.o",
 "voice_opus.o",
+#endif
+
+#if 1
+// libspeex
+"bits.o",
+"cb_search.o",
+"exc_10_16_table.o",
+"exc_10_32_table.o",
+"exc_20_32_table.o",
+"exc_5_256_table.o",
+"exc_5_64_table.o",
+"exc_8_128_table.o",
+"fftwrap.o",
+"filterbank.o",
+"filters.o",
+"gain_table.o",
+"gain_table_lbr.o",
+"hexc_10_32_table.o",
+"hexc_table.o",
+"high_lsp_tables.o",
+"jitter.o",
+"kiss_fft.o",
+"kiss_fftr.o",
+"lbr_48k_tables.o",
+"lpc.o",
+"lsp.o",
+"lsp_tables_nb.o",
+"ltp.o",
+"math_approx.o",
+"mdf.o",
+"misc.o",
+"modes.o",
+"nb_celp.o",
+"preprocess.o",
+"quant_lsp.o",
+"sb_celp.o",
+"smallft.o",
+"speex.o",
+"speex_callbacks.o",
+"speex_header.o",
+"stereo.o",
+"vbr.o",
+"vorbis_psy.o",
+"vq.o",
+"window.o",
 #endif

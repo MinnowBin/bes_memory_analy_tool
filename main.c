@@ -21,6 +21,7 @@ static int is_target_obj_name(const char * obj_name)
 	//printf("%s\n", obj_name);
 	for(i=0;i<target_obj_name_num;i++){
 		if(!strcmp(obj_name, target_obj_name[i])){
+			printf("%s\n", obj_name);
 			return 1;
 		}
 	}
@@ -39,10 +40,10 @@ static int map_file_find_section(const char * buf, uint32_t ln)
 	};
 
 	//printf("sizeof(target_obj_name) = %ld, target_obj_name_num = %ld\n",sizeof(target_obj_name),sizeof(target_obj_name) / TARGET_OBJ_NAME_SIZE_MAX);
-
+	#if 0
 	for(i=0;i<5;i++){
 		if(!strcmp(buf, mfs[i])){
-			printf("[%d] %s", ln, mfs[i]);
+			//printf("[%d] %s", ln, mfs[i]);
 			break;					
 		}		
 	}
@@ -50,6 +51,13 @@ static int map_file_find_section(const char * buf, uint32_t ln)
 		return 1;
 	else
 		return 0;
+	#endif
+
+	if(!strcmp(buf, mfs[4])){
+		return 1;
+	}else{
+		return 0;
+	}
 }
 
 static int get_line_len(uint8_t * line_buf)
