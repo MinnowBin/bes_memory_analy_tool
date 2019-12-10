@@ -129,20 +129,20 @@
 
 <a name="6QfZp"></a>
 # 使用流程
-
-##1. 修改 target_obj.h
-
+<a name="A0gVq"></a>
+## 1. 修改 target_obj.h
 将准备的目标文件列表以数组元素的方式，粘贴到target_obj.h中。工具会以该文件给出的目标文件为检索对象。统计相关的内存占用。<br />
 
-##2. 编译main函数
-
+<a name="XVcO6"></a>
+## 2. 编译main函数
 在windows ubuntu 子系统中测试
 ```bash
 gcc main.c
 ```
 编译后生成 a.out<br />
 
-##3. 运行可执行文件，得到结果
+<a name="b9vC2"></a>
+## 3. 运行可执行文件，得到结果
 ```bash
 ./a.out [map文件] < [结果输出到的文件]
 ```
